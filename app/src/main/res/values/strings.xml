@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FireBase-Assignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="log_out">log_out</string>
+</resources>

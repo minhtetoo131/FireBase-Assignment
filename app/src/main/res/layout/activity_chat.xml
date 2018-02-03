@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium_2">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_gravity="bottom"
+        >
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"/>
+
+        <ImageView
+            android:id="@+id/btn_send_pic"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_insert_photo_24dp"/>
+
+        <ImageView
+            android:id="@+id/btn_send_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_24dp"/>
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
